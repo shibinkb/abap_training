@@ -1,1 +1,30 @@
+*&---------------------------------------------------------------------*
+*& Report YTUT_VARIABLES
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT YTUT_VARIABLES.
 
+*Declaring Variables
+DATA LV_FIRST_NAME TYPE C LENGTH 10. "Text
+DATA LV_LAST_NAME TYPE C LENGTH 10. "Text
+DATA LV_AGE TYPE N LENGTH 3. "Numerical Text
+DATA LV_DOB TYPE D. "Date
+DATA LV_ROLL_NO TYPE I. "Integer
+DATA LV_ADDRESS TYPE STRING. "String
+
+*Assigning Values to Variables
+LV_FIRST_NAME = 'John'.
+LV_LAST_NAME = 'Snow'.
+LV_AGE = '34'.
+LV_DOB = '24011986'.
+LV_ROLL_NO = 5200.
+LV_ADDRESS = 'Haupt Str.30 Heidelberg Germany'.
+
+*Printing Variables
+WRITE LV_FIRST_NAME.
+WRITE LV_LAST_NAME.
+WRITE LV_AGE.
+WRITE LV_DOB.
+WRITE LV_ROLL_NO.
+WRITE LV_ADDRESS.
