@@ -3,23 +3,15 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-REPORT YTUT_DATA_ELEMENTS.
+REPORT YTUT_DATA_ELEMENTS_VALUE.
 
 *Declaring Variables
-DATA LV_FIRST_NAME TYPE ZEMP_NAME_DE. "Text
-DATA LV_LAST_NAME TYPE ZEMP_NAME_DE. "Text
-DATA LV_AGE TYPE  ZEMP_AGE_DE. "Numerical Text
-DATA LV_DOB TYPE ZEMP_DOB_DE. "Date
-DATA LV_ROLL_NO TYPE I. "Integer
-DATA LV_ADDRESS TYPE ZEMP_ADD_DE. "String
-
-*Assigning Values to Variables
-LV_FIRST_NAME = 'John'.
-LV_LAST_NAME = 'Snow'.
-LV_AGE = '34'.
-LV_DOB = '19862401'.
-LV_ROLL_NO = 5200.
-LV_ADDRESS = 'Haupt Str.30 Heidelberg Germany'.
+DATA LV_FIRST_NAME TYPE ZEMP_NAME_DE VALUE 'John'. "Text
+DATA LV_LAST_NAME TYPE ZEMP_NAME_DE VALUE 'Snow'. "Text
+DATA LV_AGE TYPE  ZEMP_AGE_DE VALUE '34'. "Numerical Text
+DATA LV_DOB TYPE ZEMP_DOB_DE VALUE '19862401'. "Date
+DATA LV_ROLL_NO TYPE I VALUE 5200. "Integer
+DATA LV_ADDRESS TYPE ZEMP_ADD_DE VALUE 'Haupt Str.30 Heidelberg Germany'. "String
 
 *Printing Variables
 WRITE LV_FIRST_NAME.
